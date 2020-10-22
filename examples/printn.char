@@ -1,0 +1,49 @@
+# printn.char
+# a "function" that prints an integer
+
+
+:main
+
+
+^printn_neg
+	>45
+	.
+	"
+	>2
+	*
+	-
+	:printn
+
+^printn
+	~ :printn_neg
+	>0
+	&
+^_printn
+	"
+	>10
+	%
+	>1
+	+
+	&
+	>10
+	/
+	? :_printn
+	<
+^__printn
+	? :___printn
+	>10
+	.
+	<
+	!
+^___printn
+	>47
+	+
+	.
+	:__printn
+
+	
+^main
+
+>123456789
+;printn
+@

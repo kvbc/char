@@ -1,0 +1,11 @@
+# out.char
+# a program that prints it input
+
+
+^read
+	,
+	? :print
+	@
+^print
+	.
+	:read
