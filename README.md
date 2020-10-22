@@ -15,7 +15,8 @@ Char's syntax can be represented as a table of commands:
 | `>`       | Number    | Push a number onto the stack                                    |
 | `<`       | -         | Discard the top item on the stack                               |
 | `+`       | -         | Pop `a` and `b`. Push `a + b`                                   |
-| `*`       | -         | Pop `a` and `b`. Push `a * b`                                   |
+| `-`       | -         | Pop `a` and `b`. Push `b - a`                                   |
+| `*`       | -         | Pop `a` and `b`. Push `b * a`                                   |
 | `/`       | -         | Pop `a` and `b`. Push `b / a`                                   |
 | `%`       | -         | Pop `a` and `b`. Push `b % a`                                   |
 | `.`       | -         | Pop `a` and print it as a character                             |
