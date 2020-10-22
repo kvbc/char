@@ -39,14 +39,14 @@ Currently Char is in its beta state. There's a lot that has to be done / improve
 
 - [x] `v1-beta` - The first version of Char
   - [x] `v1.0-beta` - the base release
-- [] `v2-beta` - File System
-  - [] `v2.0-beta` - the base release
-  - [] `v2.1-beta` - file system implementation
-  - [] `v2.2-beta` - file linking
-- [] `v3-beta` - Standard Library
-  - [] `v3.0-beta` - the base release
-  - [] `v3.1-beta` - a little peek on the Char's standard library
-  - [] `v3.2-beta` - _chrlib_, the standard library for Char
+- [ ] `v2-beta` - File System
+  - [ ] `v2.0-beta` - the base release
+  - [ ] `v2.1-beta` - file system implementation
+  - [ ] `v2.2-beta` - file linking
+- [ ] `v3-beta` - Standard Library
+  - [ ] `v3.0-beta` - the base release
+  - [ ] `v3.1-beta` - a little peek on the Char's standard library
+  - [ ] `v3.2-beta` - _chrlib_, the standard library for Char
 
 ___
 
