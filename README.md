@@ -40,6 +40,7 @@ Currently Char is in its beta state. There's a lot that has to be done / improve
 
 - [x] `v1-beta` - The first version of Char
   - [x] `v1.0-beta` - the base release
+    - [x] `v1.0.1-beta` - syntactic sugar
 - [ ] `v2` - File System
   - [ ] `v2.0` - the base release
   - [ ] `v2.1` - file system implementation
