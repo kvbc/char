@@ -44,7 +44,6 @@ int main(int argc, char** argv) {
 			free(p);
 		}
 	} else {
-		puts("Expected the path to read from");
-		printf("Usage: <exe> <src> <input>");
+		printf("Usage: %s <src> [input]", argv[0]);
 	}
 }
