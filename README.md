@@ -81,4 +81,4 @@ After you've built an executable you can run it according to this usage:
 
 ___
 
-###### This README was inspired by a README from the repository of the [Night](https://github.com/DynamicSquid/night) programming language
+###### This README and many other things were inspired by the repository of the [Night](https://github.com/DynamicSquid/night) programming language
