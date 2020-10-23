@@ -13,8 +13,8 @@
 
 char_stack_t* char_stack_new(uint32_t cap) {
 	char_stack_t* stack = malloc(sizeof(char_stack_t));
-	stack->cap = cap;
 	stack->top = 0;
+	stack->cap = cap;
 	stack->mem = malloc(sizeof(int) * cap);
 	return stack;
 }
@@ -29,14 +29,14 @@ void char_stack_push(char_stack_t* stack, int val) {
 
 int char_stack_pop(char_stack_t* stack) {
 	if(stack->top == 0)
-		return NULL;
+		return 0;
 	return stack->mem[--stack->top];
 }
 
 
 int char_stack_top(char_stack_t* stack) {
 	if(stack->top == 0)
-		return NULL;
+		return 0;
 	return stack->mem[stack->top - 1];
 }
 
