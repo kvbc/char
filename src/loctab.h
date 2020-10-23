@@ -20,7 +20,7 @@ typedef struct {
 
 
 typedef struct {
-	uint32_t cur;
+	uint32_t top;
 	uint32_t cap;
 	char_loc_t* mem;
 } char_loctab_t;
