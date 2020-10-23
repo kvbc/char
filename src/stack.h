@@ -12,8 +12,8 @@
 
 typedef struct {
 	int* mem;
-	uint32_t cap;
 	uint32_t top;
+	uint32_t cap;
 } char_stack_t;
 
 
