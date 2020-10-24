@@ -1,6 +1,10 @@
 # char
 
-![](https://i.imgur.com/MEfEIrR.png)
+[//]: https://i.imgur.com/MEfEIrR.png
+[//]: https://i.imgur.com/bVHd46F.png
+[//]: https://i.imgur.com/cECEVYD.png
+[//]: https://i.imgur.com/zXFFMuJ.png
+![](https://i.imgur.com/zXFFMuJ.png)
 
 Char is an esoteric stack based programming language, which commands are single characters. The language was designed to be fast and simple.
 
