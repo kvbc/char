@@ -12,7 +12,7 @@
 
 
 char_str_t* char_str_new(void) {
-	char_str_t* str = malloc(sizeof(char_str_t));
+	char_str_t* str = (char_str_t*)malloc(sizeof(char_str_t));
 	str->len = 0;
 	str->src = NULL;
 	return str;
@@ -24,7 +24,7 @@ char_str_t* char_str_set(char_str_t* str, char* src, uint32_t len) {
 	if(str->len < len) {
 		if(str->src)
 			free(str->src);
-		dest = malloc(len + 1);
+		dest = (char*)malloc(len + 1);
 	}
 	str->len = len;
 	str->src = memcpy(dest, src, len);
