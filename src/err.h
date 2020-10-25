@@ -11,9 +11,6 @@
 #include <stdint.h>
 
 
-#define CHAR_ERR_T_SYNTAX		"Syntax"
-#define CHAR_ERR_T_RUNTIME		"Runtime"
-
 #define CHAR_ERR_CHAR_UNEXP		"Unexpected character '%c'"
 #define CHAR_ERR_IDENT_UNEXP	"Unexpected identifier \"%s\""
 #define CHAR_ERR_NUM_EXP		"Expected an number"
@@ -25,5 +22,5 @@
 #define CHAR_ERR_FILE_NF		"File \"%s\" not found"	
 
 
-void char_err_print(char* type, uint32_t line, uint32_t col, char* frmt, ...);
-void char_err_rdrprint(char* type, char_reader_t* rdr, uint32_t offset, char* frmt, ...);
+void char_err_print(char* fn, uint32_t line, uint32_t col, char* frmt, ...);
+void char_err_rdrprint(char* fn, char_reader_t* rdr, uint32_t offset, char* frmt, ...);
