@@ -13,10 +13,10 @@
 
 
 char_loctab_t* char_loctab_new(uint32_t cap) {
-	char_loctab_t* lt = malloc(sizeof(char_loctab_t));
+	char_loctab_t* lt = (char_loctab_t*)malloc(sizeof(char_loctab_t));
 	lt->top = 0;
 	lt->cap = cap;
-	lt->mem = malloc(sizeof(char_loc_t) * cap);
+	lt->mem = (char_loc_t*)malloc(sizeof(char_loc_t) * cap);
 	return lt;
 }
 
