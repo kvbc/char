@@ -12,10 +12,10 @@
 
 
 char_stack_t* char_stack_new(uint32_t cap) {
-	char_stack_t* stack = malloc(sizeof(char_stack_t));
+	char_stack_t* stack = (char_stack_t*)malloc(sizeof(char_stack_t));
 	stack->top = 0;
 	stack->cap = cap;
-	stack->mem = malloc(sizeof(int) * cap);
+	stack->mem = (int*)malloc(sizeof(int) * cap);
 	return stack;
 }
 
