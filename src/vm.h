@@ -25,5 +25,5 @@ typedef struct {
 
 
 char_vm_state_t* char_vm_new(void);
-void char_vm_run(char_vm_state_t* vm, char* src, char* inp);
+void char_vm_run(char_vm_state_t* vm, char* fn, char* inp);
 void char_vm_close(char_vm_state_t* vm);
