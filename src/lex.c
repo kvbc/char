@@ -69,7 +69,7 @@ static void char_lex_skipws(char_lex_state_t* ls) {
 
 
 char_lex_state_t* char_lex_new(char* src) {
-	char_lex_state_t* ls = malloc(sizeof(char_lex_state_t));
+	char_lex_state_t* ls = (char_lex_state_t*)malloc(sizeof(char_lex_state_t));
 	ls->rdr = char_reader_new(src);
 	ls->tk_lexeme = char_str_new();
 	return ls;
