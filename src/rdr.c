@@ -19,7 +19,7 @@ static bool char_reader_islb(char c) {
 
 
 char_reader_t* char_reader_new(char* src) {
-	char_reader_t* rdr = malloc(sizeof(char_reader_t));
+	char_reader_t* rdr = (char_reader_t*)malloc(sizeof(char_reader_t));
 	rdr->src = src;
 	rdr->cur = src;
 	rdr->end = src + strlen(src);
