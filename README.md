@@ -1,5 +1,3 @@
-# char
-
 [//]: https://i.imgur.com/MEfEIrR.png
 [//]: https://i.imgur.com/bVHd46F.png
 [//]: https://i.imgur.com/cECEVYD.png
