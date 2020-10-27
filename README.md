@@ -4,7 +4,7 @@
 [//]: https://i.imgur.com/zXFFMuJ.png
 ![](https://i.imgur.com/zXFFMuJ.png)
 
-Char is an esoteric stack based programming language, which commands are single characters. The language was designed to be fast and simple.
+Char is an esoteric stack based programming language, which commands are single characters. The language was designed to be simple.
 
 ___
 
