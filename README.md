@@ -41,6 +41,7 @@ ___
 - [x] `v1` - The first version of Char
   - [x] `v1.0` - the base release
     - [x] `v1.0.1` - syntactic sugar
+- [x] `v2` - The last version of Char
 
 ___
 
