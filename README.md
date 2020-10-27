@@ -38,7 +38,7 @@ ___
 
 # Timeline
 
-Currently Char is in its beta state. There's a lot that has to be done / improved.
+Currently I'm working on the file system for Char. Most specificly
 
 - [x] `v1` - The first version of Char
   - [x] `v1.0` - the base release
@@ -46,7 +46,8 @@ Currently Char is in its beta state. There's a lot that has to be done / improve
 - [ ] `v2` - File System
   - [x] `v2.0` - the base release
   - [x] `v2.1` - file system implementation
-  - [ ] `v2.2` - file linking
+  - [ ] `v2.2` - exception handling
+  - [ ] `v2.3` - file linking
 - [ ] `v3` - Standard Library
   - [ ] `v3.0` - the base release
   - [ ] `v3.1` - a little peek on the Char's standard library
