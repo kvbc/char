@@ -38,8 +38,6 @@ ___
 
 # Timeline
 
-Currently I'm working on the file system for Char. Most specificly
-
 - [x] `v1` - The first version of Char
   - [x] `v1.0` - the base release
     - [x] `v1.0.1` - syntactic sugar
