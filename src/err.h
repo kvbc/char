@@ -11,6 +11,9 @@
 #include <stdint.h>
 
 
+#define CHAR_ERRT_SYNTAX		"Syntax"
+#define CHAR_ERRT_RUNTIME		"Runtime"
+
 #define CHAR_ERR_CHAR_UNEXP		"Unexpected character '%c'"
 #define CHAR_ERR_IDENT_UNEXP	"Unexpected identifier \"%s\""
 #define CHAR_ERR_NUM_EXP		"Expected an number"
