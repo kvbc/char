@@ -41,15 +41,6 @@ ___
 - [x] `v1` - The first version of Char
   - [x] `v1.0` - the base release
     - [x] `v1.0.1` - syntactic sugar
-- [ ] `v2` - File System
-  - [x] `v2.0` - the base release
-  - [x] `v2.1` - file system implementation
-  - [ ] `v2.2` - exception handling
-  - [ ] `v2.3` - file linking
-- [ ] `v3` - Standard Library
-  - [ ] `v3.0` - the base release
-  - [ ] `v3.1` - a little peek on the Char's standard library
-  - [ ] `v3.2` - _chrlib_, the standard library for Char
 
 ___
 
