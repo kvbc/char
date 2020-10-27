@@ -19,7 +19,7 @@ static CHAR_STATE char_parser_readnum(char_parser_t* p) {
 		char_lex_next(p->ls);
 	}
 	if(p->ls->tk_type != TK_NUMBER) {
-		char_err_rdrprint(p->fn, p->ls->rdr, 0, CHAR_ERR_NUM_EXP);
+		char_err_rdrprint(CHAR_ERRT_SYNTAX, p->ls->rdr, 0, CHAR_ERR_NUM_EXP);
 		return CHAR_ERROR;
 	}
 	int n = strtol(p->ls->tk_lexeme->src, NULL, 10);
@@ -28,10 +28,9 @@ static CHAR_STATE char_parser_readnum(char_parser_t* p) {
 }
 
 
-char_parser_t* char_parser_new(char_lex_state_t* ls, char* fn) {
-	char_parser_t* p = (char_parser_t*)malloc(sizeof(char_parser_t));
+char_parser_t* char_parser_new(char_lex_state_t* ls) {
+	char_parser_t* p = malloc(sizeof(char_parser_t));
 	p->ls = ls;
-	p->fn = fn;
 	p->cmd = 0;
 	p->v.i = -1;
 	p->v.s = NULL; 
@@ -55,17 +54,17 @@ CHAR_STATE char_parser_next(char_parser_t* p) {
 		case ';': {
 			char_lex_next(p->ls);
 			if(p->ls->tk_type != TK_IDENT) {
-				char_err_rdrprint(p->fn, p->ls->rdr, 0, CHAR_ERR_LBL_EXP);
+				char_err_rdrprint(CHAR_ERRT_SYNTAX, p->ls->rdr, 0, CHAR_ERR_LBL_EXP);
 				return CHAR_ERROR;
 			}
 			p->v.s = p->ls->tk_lexeme;
 			break;
 		}
 		case TK_IDENT:
-			char_err_rdrprint(p->fn, p->ls->rdr, p->ls->tk_lexeme->len, CHAR_ERR_IDENT_UNEXP, p->ls->tk_lexeme->src);
+			char_err_rdrprint(CHAR_ERRT_SYNTAX, p->ls->rdr, p->ls->tk_lexeme->len, CHAR_ERR_IDENT_UNEXP, p->ls->tk_lexeme->src);
 			return CHAR_ERROR;
 		case TK_NUMBER:
-			char_err_rdrprint(p->fn, p->ls->rdr, p->ls->tk_lexeme->len, CHAR_ERR_NUM_UNEXP, p->ls->tk_lexeme->src);
+			char_err_rdrprint(CHAR_ERRT_SYNTAX, p->ls->rdr, p->ls->tk_lexeme->len, CHAR_ERR_NUM_UNEXP, p->ls->tk_lexeme->src);
 			return CHAR_ERROR;
 	}
 
