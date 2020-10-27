@@ -14,7 +14,6 @@
 
 
 typedef struct {
-	char* err;
 	char_stack_t* st;
 	char_stack_t* rets;
 	char_loctab_t* lbls;
