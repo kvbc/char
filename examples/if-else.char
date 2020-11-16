@@ -1,0 +1,17 @@
+# if-else.char
+# abstract "if-else" statement
+
+
+>0
+? :true
+
+^false
+>110.
+>111.
+@
+
+^true
+>121.
+>101.
+>115.
+@
